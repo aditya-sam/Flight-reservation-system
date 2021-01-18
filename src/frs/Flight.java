@@ -1,11 +1,51 @@
 package frs;
 
 public class Flight {
-    int id = 100;
-    String flightNum;
-    String airlineName;
-    int capacity = 60;
-    int numOfSeatBooked = 0;
+    private int id = 100;
+    private String flightNum;
+    private String airlineName;
+    private int capacity = 60;
+    private int numOfSeatBooked = 0;
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getFlightNum() {
+        return flightNum;
+    }
+
+    public void setFlightNum(String flightNum) {
+        this.flightNum = flightNum;
+    }
+
+    public String getAirlineName() {
+        return airlineName;
+    }
+
+    public void setAirlineName(String airlineName) {
+        this.airlineName = airlineName;
+    }
+
+    public int getCapacity() {
+        return capacity;
+    }
+
+    public void setCapacity(int capacity) {
+        this.capacity = capacity;
+    }
+
+    public int getNumOfSeatBooked() {
+        return numOfSeatBooked;
+    }
+
+    public void setNumOfSeatBooked(int numOfSeatBooked) {
+        this.numOfSeatBooked = numOfSeatBooked;
+    }
 
     public String checkFlightDetails(){
         bookingCount();
