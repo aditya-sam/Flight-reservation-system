@@ -9,7 +9,7 @@ public class Passenger {
     Passenger(){
         idCount();
         this.id = idCounter;
-        this.contact= new Contact("Abu Taha","1234","abu@gmail.com");
+        this.contact= new Contact("1234","Abu Taha","abu@gmail.com");
         this.address= new Address("8th mile","Bangalore","Karnataka");
     }
 

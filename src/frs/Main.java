@@ -16,13 +16,21 @@ public class Main {
         System.out.println();
 
         RegularTicket rT = new RegularTicket("ABC123","Delhi","Bangalore","12:45 PM",
-                "2:30 PM",3500,"veg meal", f, p);
-        System.out.println(rT.getRegularTicketDetails());
+                "2:30 PM",3500,false, f, p, "veg meal");
+        if(rT.isCancelled()){
+            System.out.println("flight is cancelled!");
+        }else{
+            System.out.println(rT.getRegularTicketDetails());
+        }
 
         System.out.println();
 
         TouristTicket tT = new TouristTicket("XYZ321","Delhi","Bangalore","12:45 PM",
-                "2:30 PM",7000,"GreenLeaf, bangalore", new String[]{"A", "B", "C", "D"}, f, p);
-        System.out.println(tT.getTouristTicketDetails());
+                "2:30 PM",7000,false, f, p,"GreenLeaf, bangalore", new String[]{"A", "B", "C", "D"});
+        if(tT.isCancelled()){
+            System.out.println("flight is cancelled!");
+        }else{
+            System.out.println(tT.getTouristTicketDetails());
+        }
     }
 }
